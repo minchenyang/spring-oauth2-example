@@ -1,0 +1,9 @@
+.jks
+是java工具生成的非对称加密公钥和私钥
+生成方法 cmd 执行下面命令  文件在当前系统用户下面生成
+如下命令:
+    其中：
+        -alias  = min-oauth-jwt (别名)
+        -keyalg = RSA（非对称加密算法）
+        -keystore = 生成文件名称
+keytool -genkeypair -alias min-oauth-jwt -keyalg RSA -keystore min-jwt.jks
